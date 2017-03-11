@@ -1,95 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
-	<title>Kaustubh Ghadge</title> 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-	
-	<style type="text/css"> 
-		body {
-			background-color: #000
-		}
-		#konsole {
-			font-family: courier, monospace;
-			color: #fff;
-			width:750px;
-			margin-left:50px;
-			margin-right:auto;
-			margin-top:70px;
-			font-size:16px;
-		}
-		a {
-			color: #87ceeb;
-			text-decoration: none;
-		}
-		#name {
-			color: #0f0;
-		}
-		#directory{
-			color: #03819D;
-		}
-		#dollar {
-			color: #0bc;
-		}
-		#symbols {
-			color: #ff0096;
-		}
-	</style> 
-<body>
-<div class="container-fluid">
-<div id="konsole">
-	<p><b id="name">kaustubh@apricity</b><b id="symbols">~</b><b id="dollar">$</b> whoami<br>
-             I'm a Master's graduate student at Illinois Tech, Chicago. I'm currently in my last semester and will graduate in May 2017. </p><br>
-			<p title="Present working directory -  where I'm currently working"><b id="name">kaustubh@apricity</b> <b id="symbols">~</b><b id="dollar">$</b> pwd<br>
-			<b>/<a href="http://marketing.sorcd.com/" id="dollar">Sorc'd</a></b></p><br>
 
-			<p><b id="name">kaustubh@apricity</b><b id="symbols">~</b><b id="dollar">$</b> cat cv </p>
-			<p>==================================================================================</p>
-			<p><b id="directory">[Work]</b> &nbsp;<br> Web Developer Intern at <a href="http://marketing.sorcd.com/" id="dollar">Sorc'd</a> - Oct2016 to Present</p><br>
-			<b id="directory">[Education]</b> &nbsp;
-<table class="table table-inverse">
-	<thead>
-    <tr>
-      <th>Education Level</th> 
-      <th>University</th> 
-      <th>Timeline</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Master of Information Technology and Management</td>
-      <td>Illinois Institute of Technology</td>
-      <td>Aug 2015-May 2017</td>
-    </tr>
-    <tr>
-      <td>Master of Business Administration - Information Technology</td>
-      <td>Pune University</td>
-      <td> Aug 2011-May 2013</td>
-    </tr>
-	<tr>
-      <td>Bachelor of Computer Application</td>
-      <td>Pune University</td>
-      <td> Aug 2008-July 2011</td>
-    </tr>
-</table>
-<b id="directory">[Toolbox]</b> &nbsp;
-<ul>
-	<li><b>Programming Languages:</b> JavaScript, TypeScript, HTML5, CSS3, C#, XAML, VB</li>
-	<li><b>Frameworks and Libraries:</b> AngularJS 1.x, Angular 2.x, Ionic 1.x, NodeJS, ExpressJS, JQuery,
-Bootstrap, Foundation, .NET, HighChartsJS, AJAX, JSON, Jade, ASP.NET MVC, Web API</li>
-</ul>
-</div>
-</div>
-<div>
-<!--<a class="twitter-timeline" data-theme="dark" href="https://twitter.com/Kaustubh_Ghadge">Tweets by Kaustubh_Ghadge</a> -->
-</div>
-<br>
-<footer class="footer">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+  <title>Kaustubh Ghadge</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="js/main.js"></script>
+
+  <body>
+    <div class="container-fluid">
+      <div id="konsole">
+        <div id="whoami" class="hide" style="width: auto;">
+          <p title="About Me"><span class="username">kaustubh@archlinux</span><span class="tilde">~</span><span class="dollar">$</span>
+            <span
+              class="whoami"><span class="typed-cursor"></span></span>
+          </p>
+          <p style="display: inline; width: auto;"><span id="answhoami" class="hide"> I'm a Master's graduate student at Illinois Tech, Chicago. I'm currently in my last semester and will graduate in May 2017.<br/>
+          Contact: <span class="dollar"><a href="mailto:kaustubh.ghadge@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/kaustubhghadge" title="LinkedIn Profile">LinkedIn</a> | <a href="https://www.github.com/kaustubhghadge" text="GitHub Profile">GitHub</a> | <a href="https://www.twitter.com/Kaustubh_Ghadge" title="Twitter Profile">Twitter</a> | <a href="https://www.facebook.com/ghadge.kaustubh" title="Facebook Profile">Facebook</a></span>
+          </p>
+        </div>
+        <br/>
+        <div id="pwd" class="hide" style="width: auto;">
+          <p title=" Present working directory -  where I'm currently working"> <span class="username">kaustubh@archlinux</span><span class="tilde">~</span><span class="dollar">$</span>
+            <span class="pwd"><span class="typed-cursor"></span></p>
+          <p style="display: inline; width: auto;"><span id="anspwd" class="hide dollar">/<a href="http://marketing.sorcd.com/">Sorcd</a></span></p>
+        </div>
+        <br/>
+        <div id="cv" class="hide" style="width:auto;">
+          <p title="mycv"> <span class="username">kaustubh@archlinux</span><span class="tilde">~</span><span class="dollar">$</span>
+            <span class="catcv"><span class="typed-cursor"></span></span>
+          </p>
+          <div id="catcv-ans" class="hide">
+            <p>==================================================================================</p>
+            <p><b id="directory">[Work]</b> &nbsp;<br> Web Developer Intern at <a href="http://marketing.sorcd.com/" id="dollar">Sorc'd</a>              - Oct2016 to Present</p><br>
+            <div id="cv-education">
+              <b id="directory">[Education]</b> &nbsp;
+              <table class="table table-inverse">
+                <thead>
+                  <tr>
+                    <th>Education Level</th>
+                    <th>University</th>
+                    <th>Timeline</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Master of Information Technology and Management</td>
+                    <td>Illinois Institute of Technology</td>
+                    <td>Aug 2015-May 2017</td>
+                  </tr>
+                  <tr>
+                    <td>Master of Business Administration - Information Technology</td>
+                    <td>Pune University</td>
+                    <td> Aug 2011-May 2013</td>
+                  </tr>
+                  <tr>
+                    <td>Bachelor of Computer Application</td>
+                    <td>Pune University</td>
+                    <td> Aug 2008-July 2011</td>
+                  </tr>
+              </table>
+              </tbody>
+              </table>
+            </div>
+            <!--end of education div-->
+            <div id="Toolbox">
+              <b id="directory">[Toolbox]</b> &nbsp;
+
+              <table class="table table-inverse">
+                <thead>
+                  <tr>
+                    <th>Programming Languages and Web Technologies</th>
+                    <th>Cloud/Virtualization Technologies</th>
+                    <th>System and Tools</th>
+                    <th>Databases</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                       HTML5, CSS3, C#, VB, AJAX, jQuery, JSON, REST API, ASP.NET Web API,NodeJS, AngularJS, IonicJS, ExpressJS, HighChartsJS, XAML, SQL, PL-SQL, .NET, JADE, Bootstrap, Foundation, SASS, LESS</td>
+                    <td>Amazon Web Services (AWS), Azure, Google Cloud Platform, OpenStack (DevStack, Packstack),Hyper V, VMWare ESXi 6.5, Docker, XenServer, vCenter DataCenter Server</td>
+                    <td>GNU/Linux, BSD, Windows, Windows Server 2016, Vagrant, AWS-CLI, Azure-CLI, Git, Team Foundation Server(TFS), Microsoft Visual Studio, Webstorm, Eclipse, Ubuntu SDK, Gulp, Grunt, Jasmine, Karma</td>
+                    <td>MySQL, Microsoft SQL Server 2016, MongoDB, CouchDB, IndexedDB, Oracle 8i/9i/10g</td>
+                  </tr>
+              </table>
+            </div>
+            <!--end of toolbox-->
+          </div>
+          <!--end of catcv-ans-->
+        </div>
+        <!--end of cv-->
+        <div id="endDiv" class="hide" style="width:auto">
+          <p><span class="username">kaustubh@archlinux</span><span class="tilde">~</span><span class="dollar">$</span>
+            <span class="endDiv"><span class="typed-cursor"></span></span>
+          </p>
+        </div>
+      </div>
+      <!--end of konsole-->
+    </div>
+    <!--end of container fluid-->
+    <br/>
+    <br/>
+    <footer id="footer" class="footer hide">
       <div class="container">
-        <p class="text-muted">This website design is an illustration of my admiration of Unix shell and GNU/Linux operating systems. This project is a work in progress.  </p>
+        <p class="text-muted" style="text-align: center">This website design is an illustration of my admiration of Unix shell and GNU/Linux operating systems. This project
+          is a work in progress. Please contact kaustubh.ghadge@gmail.com </p>
       </div>
     </footer>
-</body>
+  </body>
+
 </html>
