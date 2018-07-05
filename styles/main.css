@@ -1,40 +1,44 @@
-body {
-			background-color: #000
-	 }
-		#konsole {
-			font-family: courier, monospace;
-			color: #fff;
-			width:750px;
-			margin-left:50px;
-			margin-right:auto;
-			margin-top:70px;
-			font-size:16px;
-		}
-a 	{
-			color: #87ceeb;
-			text-decoration: none;
-		}
+body
+{
+background-color: #000
+}
+#konsole 
+{
+font-family: courier, monospace;
+color: #fff;
+width:100%;
+margin-left:auto;
+margin-right:auto;
+margin-top:70px;
+font-size:16px;
+}
+a 	
+{
+color: #87ceeb;
+text-decoration: none;
+}
 .username 
 {
-	color: #0f0;
-	cursor:pointer;
+color: #0f0;
+cursor:pointer;
 }
-#directory{
-			color: #03819D;
-		}
+#directory
+{
+color: #03819D;
+}
 .dollar
 {
-	color: #0bc;
+color: #0bc;
 }
 .tilde 
 {
-	color: #ff0096;
+color: #ff0096;
 }
 
 .hide
 
 {
-	visibility: hidden;
+visibility: hidden;
 }
 
 .typed-cursor{
@@ -43,18 +47,24 @@ a 	{
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
+
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
 @-webkit-keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
 @-moz-keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
-}	
+}
+
+	
+
