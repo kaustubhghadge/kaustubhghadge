@@ -2,7 +2,7 @@ body
 {
 background-color: #000
 }
-#konsole 
+.konsole 
 {
 font-family: courier, monospace;
 color: #fff;
@@ -46,6 +46,15 @@ visibility: hidden;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.posts{
+    max-width: 500px;
+    text-align: justify;
 }
 
 @keyframes blink{
