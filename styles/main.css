@@ -61,6 +61,20 @@ ul {
     font-size:18px;
 }
 
+aside {
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #FCFF33;
+    font-style: italic;
+    color: #FCFF33;
+}
+
+aside > p {
+    margin: .5rem;
+}
+
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
