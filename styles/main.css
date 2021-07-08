@@ -10,7 +10,7 @@ width:100%;
 margin-left:auto;
 margin-right:auto;
 margin-top:70px;
-font-size:16px;
+font-size:18px;
 }
 a 	
 {
@@ -52,6 +52,10 @@ ul {
     list-style-type: none;
 }
 
+section{
+    max-width: 500px;
+}
+
 .posts{
     max-width: 500px;
     text-align: justify;
@@ -60,6 +64,11 @@ ul {
     width:100%;
     font-size:18px;
 }
+
+div{
+    margin-bottom: .5rem;
+}
+
 
 aside {
     width: 40%;
